@@ -1,0 +1,4 @@
+name: MinecraftGunGame
+version: '${project.version}'
+main: dev.arde100.minecraftgungame.MinecraftGunGame
+api-version: 1.19
