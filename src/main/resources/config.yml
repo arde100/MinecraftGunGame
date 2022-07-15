@@ -1,0 +1,55 @@
+# Found a bug? Report it to https://github.com/arde100/MinecraftGunGame/issues or you can also message me on discord arde100#00000
+
+# What a player's kills get multiplied by when he dies
+multiplier-after-death: 0.5
+
+# This is where you can define the items players get from having kills
+# Below you can see examples of defining items.
+# One indentation is 2 spaces
+
+# "mode" can be "set" or "add"
+# "set" will change the item in the defined slot "slot" (You can see slot numbers here: https://minecraft.fandom.com/wiki/Inventory?file=Items_slot_number.png)
+# "add" will add the item to the first empty slot, "add" ignores "slot"
+# default mode is "set" and default slot is 0 (first slot in hotbar)
+
+# "slot" defines what slot to set the item in (You can see slot numbers here: https://minecraft.fandom.com/wiki/Inventory?file=Items_slot_number.png)
+
+# "item" defines the item to use
+
+# enchants need to be defined like this
+# enchants:
+#   - "enchant_id level"
+# if "enchants" isn't provided, the default behavior is to add no enchants
+# enchant ids can be found here: https://minecraft.fandom.com/el/wiki/Enchanting/ID
+
+killItems:
+  0:
+    mode: "set"
+    slot: 0
+    item: "IRON_SWORD"
+  1:
+    mode: "set"
+    slot: 0
+    item: "IRON_SWORD"
+    enchants:
+      - "SHARPNESS 1"
+  2:
+    mode: "set"
+    slot: 101
+    item: "LEATHER_LEGGINGS"
+  # You can remove something by setting the slot to air
+  3:
+    mode: "set"
+    slot: 0
+    item: "AIR"
+  # Example of minimum typing to set an item:
+  4:
+    item: "STONE_AXE"
+  # That sets the first hotbar slot to a stone axe without enchantments
+
+
+
+
+
+
+
